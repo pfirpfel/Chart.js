@@ -772,7 +772,7 @@
 			ctx.font = font;
 			var longest = 0;
 			each(arrayOfStrings,function(string){
-				var textWidth = ctx.measureText(string).width;
+				var textWidth = ctx.measureText(string).width * 1.05;
 				longest = (textWidth > longest) ? textWidth : longest;
 			});
 			return longest;
